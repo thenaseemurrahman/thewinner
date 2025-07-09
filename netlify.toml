@@ -1,0 +1,13 @@
+[build]
+  command = "vite build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://pakhtunleather.com/backend/wp-json/wc/v3/:splat"
+  status = 200
+  force = true
+  headers = {
+    "X-Country" = "US",
+    "Authorization" = "Basic Y2tfODE3MDZhMTQxYzQ3NjkxNjNlYzg3YjEzNGYyZjEwMzZlZTUwYWFjMDpjc19hYmViZTBjMzEzNGRlOWMzNzAzMzczOWM4NGY3ZTNmNTlmZjUyNTVh"
+  }

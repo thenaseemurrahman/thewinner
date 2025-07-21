@@ -15,6 +15,7 @@ export default defineConfig(({ mode }) => {
       dedupe: ['react', 'react-dom'],
     },
     server: {
+      host: '0.0.0.0',
       port: 8080,
       strictPort: true,
       open: '/',
